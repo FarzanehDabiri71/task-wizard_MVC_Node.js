@@ -1,7 +1,5 @@
 import express from "express";
-
-import Task from "./Task.js";
-
+import Task from "./models/Task.js";
 const router = express.Router();
 
 router.get("/", (req, res) => {

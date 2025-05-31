@@ -1,7 +1,6 @@
 import express from "express";
-import Task from "./Task.js";
-import DB from "./db.js";
-
+import Task from "./models/Task.js"; // Adjust the import path as necessary
+import DB from "./models/db.js";
 const router = express.Router();
 
 router.post("/add-task", (req, res, next) => {
