@@ -1,0 +1,12 @@
+html {
+  font-size: 20px;
+}
+
+.container {
+  max-width: 960px;
+}
+
+form {
+  background-color: #e6e4e4;
+  direction: rtl;
+}
