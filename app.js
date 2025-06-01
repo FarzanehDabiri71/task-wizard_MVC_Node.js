@@ -4,8 +4,8 @@ import express from "express";
 
 import "dotenv/config";
 
-import getRoutes from "./get-routes.js";
-import postRoutes from "./post-routes.js";
+import getRoutes from "./controllers/get-routes.js";
+import postRoutes from "./controllers/post-routes.js";
 
 const app = express();
 const __filename = fileURLToPath(import.meta.url);
@@ -19,3 +19,5 @@ app.use(express.json());
 app.use("/", getRoutes);
 app.use("/", postRoutes);
 app.listen(3000);
+
+export { __dirname as rootPath };
